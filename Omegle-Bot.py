@@ -4,6 +4,7 @@
 # This was made to work not to work fast. :)
 # Check for updates on the Github page
 # Version 1.0
+
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
@@ -28,11 +29,12 @@ while j <= 99999:
 
         search = driver.find_element_by_class_name("chatmsg")
         search.send_keys("PUT WHAT YOU WANT THE BOT TO SAY HERE")
+#Replace the " PUT WHAT YOU WANT THE BOT TO SAY HERE " with the message you want the bot to say.
         search.send_keys(Keys.RETURN)
         search.send_keys(Keys.ESCAPE)
         search.send_keys(Keys.ESCAPE)
         time.sleep(15)
-
+#Replace the " 15 " with the amount of time you want the bot to wait befor starting again
         click_button = driver.find_element_by_class_name("disconnectbtn")
         click_button.click()
         print(i)
