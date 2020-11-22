@@ -3,4 +3,5 @@ Hello. This file runs on the selenium library. Use this at your own risk. This i
 
 If you want to download the selenium library do " pip install selenium "
 
-You will have to install the chrome driver then you have to change the code to
+You will have to install the chrome driver then you have to change the code 
+ 
