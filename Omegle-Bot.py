@@ -9,7 +9,7 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
 
-PATH = "C:\Web Driver\chromedriver.exe"
+PATH = "THE PATH WHERE YOUR CHROME DRIVER IS"
 driver = webdriver.Chrome(PATH)
 
 j = 1
