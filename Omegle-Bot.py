@@ -23,6 +23,7 @@ while j <= 99999:
     click_button = driver.find_element_by_id("textbtn")
     click_button.click()
     i = 1
+    print("Starting")
 
     while i <= 5:
         time.sleep(1)
