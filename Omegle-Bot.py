@@ -28,19 +28,23 @@ while j <= 99999:
     while i <= 5:
         time.sleep(1)
 
-        search = driver.find_element_by_class_name("chatmsg")
-        search.send_keys("PUT WHAT YOU WANT THE BOT TO SAY HERE")
+        try:
+            search = driver.find_element_by_class_name("chatmsg")
+            search.send_keys("PUT WHAT YOU WANT THE BOT TO SAY HERE")
 #Replace the " PUT WHAT YOU WANT THE BOT TO SAY HERE " with the message you want the bot to say.
-        search.send_keys(Keys.RETURN)
-        search.send_keys(Keys.ESCAPE)
-        search.send_keys(Keys.ESCAPE)
-        time.sleep(15)
+            search.send_keys(Keys.RETURN)
+            search.send_keys(Keys.ESCAPE)
+            search.send_keys(Keys.ESCAPE)
+            time.sleep(15)
 #Replace the " 15 " with the amount of time you want the bot to wait befor starting again
-        click_button = driver.find_element_by_class_name("disconnectbtn")
-        click_button.click()
-        print(i)
+            click_button = driver.find_element_by_class_name("disconnectbtn")
+            click_button.click()
+        except:
+            click_button = driver.find_element_by_class_name("disconnectbtn")
+            click_button.click()
+            print("Failed")
         i = i + 1
-
+        print(i)
     print("Done J=")
     print(j)
     print("Starting again")
